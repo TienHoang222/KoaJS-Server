@@ -216,7 +216,7 @@ async function add(ctx) {
   console.log("Body Data: ", body);
   things.push(body);
   ctx.body = "Added";
-  ctx.redirect("http://localhost:3000/dashboard");
+  // ctx.redirect("http://localhost:3000/dashboard");
 }
 
 router.get("/list", list);
