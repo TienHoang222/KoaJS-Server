@@ -4,10 +4,11 @@ const json = require("koa-json");
 const path = require("path");
 // const render = require("koa-ejs");
 const bodyParser = require("koa-bodyparser");
-const cors = require("cors");
+const cors = require("koa2-cors");
 
 const app = new Koa();
 const router = new KoaRouter();
+app.use(cors());
 
 app.use(json());
 app.use(bodyParser());
